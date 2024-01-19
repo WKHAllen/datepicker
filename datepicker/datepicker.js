@@ -447,6 +447,7 @@ class DatePicker {
         openButtonContainer.addEventListener("focusin", clearSelections);
         {
           const openButton = document.createElement("button");
+          openButton.setAttribute("type", "button");
           openButton.classList.add(
             "date-picker-icon-button",
             "date-picker-icon-button-open"
@@ -485,6 +486,7 @@ class DatePicker {
             monthControls.classList.add("date-picker-calendar-month-controls");
             {
               const prevMonthButton = document.createElement("button");
+              prevMonthButton.setAttribute("type", "button");
               prevMonthButton.classList.add(
                 "date-picker-icon-button",
                 "date-picker-icon-button-left"
@@ -513,6 +515,7 @@ class DatePicker {
             }
             {
               const nextMonthButton = document.createElement("button");
+              nextMonthButton.setAttribute("type", "button");
               nextMonthButton.classList.add(
                 "date-picker-icon-button",
                 "date-picker-icon-button-right"
@@ -679,6 +682,7 @@ class DatePicker {
         if (dayDisabled) day.classList.add("date-picker-calendar-day-disabled");
         {
           const dayButton = document.createElement("button");
+          dayButton.setAttribute("type", "button");
           dayButton.classList.add("date-picker-calendar-day-button");
           dayButton.disabled = dayDisabled;
           dayButton.addEventListener("click", () => {
