@@ -952,6 +952,7 @@ class DatePicker {
    */
   setDisabled(disabled) {
     this.disabled = disabled;
+    if (disabled) this.open = false;
     this.update();
   }
 
